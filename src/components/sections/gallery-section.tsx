@@ -4,7 +4,7 @@ import Image from "next/image";
 const galleryItems = [
   { src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8bWFrZXVwJTIwa2l0fGVufDB8fHx8MTc0ODcwMzU2MHww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup kit and products", dataAiHint: "makeup kit" },
   { src: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYWNpYWx8ZW58MHx8fHwxNzQ4NzA0MDQxfDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Woman receiving facial treatment", dataAiHint: "facial treatment" },
-  { src: "https://images.unsplash.com/photo-1549236177-f9b0031756eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8d29tZW4lMjBoYWlyc3R5bGVzfGVufDB8fHx8MTc0ODcwNDAwOXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Woman with stylish hair", dataAiHint: "woman hairstyle" },
+  { src: "https://images.unsplash.com/photo-1617655345937-95fafc9013f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleWVsYXNofGVufDB8fHx8MTc0ODcwNDc0OXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Eyelash extension close-up", dataAiHint: "eyelash" },
 ];
 
 export function GallerySection() {
