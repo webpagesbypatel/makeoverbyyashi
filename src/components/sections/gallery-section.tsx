@@ -4,7 +4,7 @@ import Image from "next/image";
 const galleryItems = [
   { src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8bWFrZXVwJTIwa2l0fGVufDB8fHx8MTc0ODcwMzU2MHww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup kit and products", dataAiHint: "makeup kit" },
   { src: "https://images.unsplash.com/photo-1597586124394-fbd6ef244026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Z2lybHN8ZW58MHx8fHwxNzQ4NzAzOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Smiling woman", dataAiHint: "smiling woman" },
-  { src: "https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWtldXB8ZW58MHx8fHwxNzQ4NzAzNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup application", dataAiHint: "makeup" },
+  { src: "https://images.unsplash.com/photo-1549236177-f9b0031756eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8d29tZW4lMjBoYWlyc3R5bGVzfGVufDB8fHx8MTc0ODcwNDAwOXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Woman with stylish hair", dataAiHint: "woman hairstyle" },
 ];
 
 export function GallerySection() {
