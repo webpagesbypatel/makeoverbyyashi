@@ -29,11 +29,11 @@ export function Navbar() {
     if (!isMounted) return;
 
     const handleScroll = () => {
-      setHasScrolled(window.scrollY > 20); // Trigger after scrolling 20px
+      setHasScrolled(window.scrollY > 20); 
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll(); 
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMounted]);
@@ -41,10 +41,9 @@ export function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   if (!isMounted) {
-    // To prevent hydration mismatch, render a basic non-interactive header with initial styling for curve visibility
     return (
-      <header className="sticky top-0 z-50 w-full h-20 bg-background/20 backdrop-blur-lg rounded-2xl">
-        {/* Placeholder or minimal content if needed to avoid layout shift, or just null */}
+      <header className="sticky top-0 z-50 w-full h-20 bg-transparent backdrop-blur-xl rounded-full shadow-sm border border-transparent">
+        {/* Placeholder matches new initial state for smooth hydration */}
       </header>
     );
   }
@@ -52,10 +51,10 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full backdrop-blur-lg rounded-2xl transition-all duration-300 ease-in-out",
-        hasScrolled || isMenuOpen
-          ? "bg-background/80 shadow-lg" 
-          : "bg-background/20 shadow-none" // Initial state with slight opacity for curve visibility
+        "sticky top-0 z-50 w-full backdrop-blur-xl rounded-full transition-all duration-300 ease-in-out border border-transparent", 
+        (hasScrolled || isMenuOpen)
+          ? "bg-background/80 shadow-xl border-accent/30" 
+          : "bg-transparent shadow-sm" 
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -89,7 +88,7 @@ export function Navbar() {
       </div>
 
       {isMobile && isMenuOpen && (
-        <div className="md:hidden bg-background/80 shadow-lg absolute w-full left-0 top-20 rounded-2xl backdrop-blur-lg">
+        <div className="md:hidden bg-background/80 shadow-xl absolute w-full left-0 top-20 rounded-2xl backdrop-blur-xl border border-accent/30 border-t-0">
           <nav className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (
               <Link
