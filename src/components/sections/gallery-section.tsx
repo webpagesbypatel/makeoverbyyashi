@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const galleryItems = [
   { src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWF1dHl8ZW58MHx8fHwxNzQ4Njk5Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 1", dataAiHint: "hairstyle makeover" },
-  { src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwYXJsb3VyfGVufDB8fHx8MTc0ODY5OTY3MHww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Parlour ambiance 1", dataAiHint: "salon interior" },
+  { src: "https://images.unsplash.com/photo-1597143722151-6c041d7b2901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8YmVhdXR5fGVufDB8fHx8MTc0ODY5OTY4N3ww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Parlour ambiance 1", dataAiHint: "salon interior" },
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 2", dataAiHint: "makeup result" },
   { src: "https://placehold.co/600x400.png", alt: "Parlour ambiance 2", dataAiHint: "spa room" },
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 3", dataAiHint: "nail art" },
@@ -44,4 +44,3 @@ export function GallerySection() {
     </section>
   );
 }
-
