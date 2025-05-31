@@ -4,7 +4,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -60,23 +59,13 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="relative py-16 md:py-24 overflow-hidden">
-      <Image
-        src="https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWJ5JTIwcGlua3xlbnwwfHx8fDE3NDg3MDQyNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-        alt="Baby pink textured background"
-        layout="fill"
-        objectFit="cover"
-        className="absolute z-0"
-        data-ai-hint="baby pink"
-        quality={75}
-      />
-      <div className="absolute inset-0 bg-black/80 z-10" />
-      <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-16 md:py-24 bg-accent">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">
+          <h2 className="font-headline text-4xl md:text-5xl font-bold text-accent-foreground">
             Get In Touch
           </h2>
-          <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-accent-foreground/80 max-w-2xl mx-auto">
             We're here to answer any questions you may have. Reach out to us and we'll respond as soon as we can.
           </p>
         </div>
