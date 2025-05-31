@@ -37,9 +37,6 @@ export function GallerySection() {
                 className="transition-transform duration-500 ease-in-out group-hover:scale-110"
                 data-ai-hint={item.dataAiHint}
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <p className="text-white font-headline text-xl">{item.alt}</p>
-              </div>
             </div>
           ))}
         </div>
