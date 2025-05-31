@@ -7,13 +7,14 @@ export function HeroSection() {
   return (
     <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://images.unsplash.com/photo-1470259078422-826894b933aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8YmVhdXR5JTIwcGFybG91cnxlbnwwfHx8fDE3NDg2OTk2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080"
         alt="Luxury salon interior"
         layout="fill"
         objectFit="cover"
         quality={80}
         className="absolute z-0"
         data-ai-hint="salon interior"
+        priority // Added priority for LCP
       />
       <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay for text contrast */}
       
