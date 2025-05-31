@@ -41,9 +41,9 @@ export function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   if (!isMounted) {
-    // To prevent hydration mismatch, render a basic non-interactive header or null on server/initial client render
+    // To prevent hydration mismatch, render a basic non-interactive header with initial styling for curve visibility
     return (
-      <header className="sticky top-0 z-50 w-full h-20 bg-transparent rounded-2xl">
+      <header className="sticky top-0 z-50 w-full h-20 bg-background/20 backdrop-blur-lg rounded-2xl">
         {/* Placeholder or minimal content if needed to avoid layout shift, or just null */}
       </header>
     );
@@ -53,9 +53,9 @@ export function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full backdrop-blur-lg rounded-2xl transition-all duration-300 ease-in-out",
-        hasScrolled || isMenuOpen // Keep background if mobile menu is open
-          ? "bg-background/80 shadow-lg" // Changed shadow-md to shadow-lg
-          : "bg-transparent shadow-none"
+        hasScrolled || isMenuOpen
+          ? "bg-background/80 shadow-lg" 
+          : "bg-background/20 shadow-none" // Initial state with slight opacity for curve visibility
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -89,7 +89,7 @@ export function Navbar() {
       </div>
 
       {isMobile && isMenuOpen && (
-        <div className="md:hidden bg-background shadow-lg absolute w-full left-0 top-20 rounded-2xl">
+        <div className="md:hidden bg-background/80 shadow-lg absolute w-full left-0 top-20 rounded-2xl backdrop-blur-lg">
           <nav className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (
               <Link
