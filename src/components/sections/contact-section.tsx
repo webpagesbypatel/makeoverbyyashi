@@ -62,15 +62,15 @@ export function ContactSection() {
   return (
     <section id="contact" className="relative py-16 md:py-24 overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1540555230793-6d5018ED0343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWF1dHklMjBzYWxvbiUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzQ4ODAwMzg5fDA&ixlib=rb-4.1.0&q=80&w=1920"
-        alt="Subtle background of beauty products"
+        src="https://images.unsplash.com/photo-1601661858028-8e9a4d218429?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb3NlJTIwZ29sZHxlbnwwfHx8fDE3NDg3MDM0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="Rose gold textured background"
         layout="fill"
         objectFit="cover"
         className="absolute z-0"
-        data-ai-hint="beauty products"
+        data-ai-hint="rose gold"
         quality={75}
       />
-      <div className="absolute inset-0 bg-black/80 z-10" />
+      <div className="absolute inset-0 bg-background/80 z-10" />
       <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">
