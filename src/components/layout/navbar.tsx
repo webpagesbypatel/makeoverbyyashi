@@ -53,7 +53,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full backdrop-blur-lg rounded-lg transition-all duration-300 ease-in-out",
+        "sticky top-0 z-50 w-full backdrop-blur-lg rounded-2xl transition-all duration-300 ease-in-out",
         hasScrolled || isMenuOpen // Keep background if mobile menu is open
           ? "bg-background/80 shadow-md"
           : "bg-transparent shadow-none"
@@ -90,7 +90,7 @@ export function Navbar() {
       </div>
 
       {isMobile && isMenuOpen && (
-        <div className="md:hidden bg-background shadow-lg absolute w-full left-0 top-20 rounded-lg">
+        <div className="md:hidden bg-background shadow-lg absolute w-full left-0 top-20 rounded-2xl">
           <nav className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (
               <Link
