@@ -185,23 +185,9 @@ export function ContactSection() {
                     </div>
                 </div>
              </div>
-            <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-xl">
-              <Image
-                src="https://placehold.co/800x600.png"
-                alt="Map location of Makeover by Yashi"
-                layout="fill"
-                objectFit="cover"
-                data-ai-hint="city map"
-              />
-               <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <Button variant="secondary" className="text-secondary-foreground bg-secondary/80 hover:bg-secondary">View Map</Button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-    
