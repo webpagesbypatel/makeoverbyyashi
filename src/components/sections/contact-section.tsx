@@ -70,7 +70,7 @@ export function ContactSection() {
         data-ai-hint="beauty products"
         quality={75}
       />
-      <div className="absolute inset-0 bg-black/80 z-10" />
+      <div className="absolute inset-0 bg-background/90 z-10" />
       <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">
