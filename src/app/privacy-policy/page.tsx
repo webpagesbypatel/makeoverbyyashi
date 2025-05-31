@@ -1,15 +1,24 @@
 
+"use client";
+
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { useState, useEffect } from "react";
 
 export default function PrivacyPolicyPage() {
+  const [lastUpdatedDate, setLastUpdatedDate] = useState("");
+
+  useEffect(() => {
+    setLastUpdatedDate(new Date().toLocaleDateString());
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary mb-8">Privacy Policy</h1>
         <div className="prose prose-lg max-w-none text-foreground/80 font-body">
-          <p>Last updated: {new Date().toLocaleDateString()}</p>
+          {lastUpdatedDate && <p>Last updated: {lastUpdatedDate}</p>}
 
           <h2 className="font-headline text-2xl text-primary mt-6 mb-3">Introduction</h2>
           <p>
