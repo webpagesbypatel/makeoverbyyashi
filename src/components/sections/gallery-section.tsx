@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const galleryItems = [
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 1", dataAiHint: "hairstyle makeover" },
-  { src: "https://placehold.co/600x400.png", alt: "Parlour ambiance 1", dataAiHint: "salon interior" },
+  { src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwYXJsb3VyfGVufDB8fHx8MTc0ODY5OTY3MHww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Parlour ambiance 1", dataAiHint: "salon interior" },
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 2", dataAiHint: "makeup result" },
   { src: "https://placehold.co/600x400.png", alt: "Parlour ambiance 2", dataAiHint: "spa room" },
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 3", dataAiHint: "nail art" },
