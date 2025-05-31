@@ -5,7 +5,7 @@ const galleryItems = [
   { src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWF1dHl8ZW58MHx8fHwxNzQ4Njk5Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 1", dataAiHint: "hairstyle makeover" },
   { src: "https://images.unsplash.com/photo-1602910344008-22f323cc1817?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8bWFrZXVwfGVufDB8fHx8MTc0ODcwMDgwMnww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup application", dataAiHint: "makeup" },
   { src: "https://images.unsplash.com/photo-1549236177-f9b0031756eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYWlyJTIwc3R5bGluZ3xlbnwwfHx8fDE3NDg3MDA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 2", dataAiHint: "hair styling" },
-  { src: "https://placehold.co/600x400.png", alt: "Parlour ambiance 2", dataAiHint: "spa room" },
+  { src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuYWlscyUyMHBhcmxvdXJ8ZW58MHx8fHwxNzQ4NzAxMzQwfDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Nail art closeup", dataAiHint: "nails parlour" },
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 3", dataAiHint: "nail art" },
   { src: "https://placehold.co/600x400.png", alt: "Parlour detail", dataAiHint: "beauty products" },
 ];
