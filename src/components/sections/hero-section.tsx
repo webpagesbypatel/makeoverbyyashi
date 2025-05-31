@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1500831777379-e4237a4534aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWlyJTIwbW9kZWwlMjB3aW5kfGVufDB8fHx8fDE3MTY1MzcxMjh8MA&ixlib=rb-4.1.0&q=80&w=1920"
+        src="https://images.unsplash.com/photo-1470259078422-826894b933aa?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Woman with dynamic pink hair"
         layout="fill"
         objectFit="cover"

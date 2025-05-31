@@ -24,20 +24,20 @@ export function Footer() {
           </nav>
 
           <div className="flex justify-center md:justify-end space-x-4">
-            <Link href="#" aria-label="Facebook" className="text-primary-foreground/80 hover:text-accent transition-colors">
+            <Link href="https://www.instagram.com/makeover.by_yashi/?igsh=MWF0MDA1cHF1MzJ6ZA%3D%3D#" aria-label="Facebook" className="text-primary-foreground/80 hover:text-accent transition-colors">
               <Facebook className="h-6 w-6" />
             </Link>
-            <Link href="#" aria-label="Instagram" className="text-primary-foreground/80 hover:text-accent transition-colors">
+            <Link href="https://www.instagram.com/makeover.by_yashi/?igsh=MWF0MDA1cHF1MzJ6ZA%3D%3D#" aria-label="Instagram" className="text-primary-foreground/80 hover:text-accent transition-colors">
               <Instagram className="h-6 w-6" />
             </Link>
-            <Link href="#" aria-label="Twitter" className="text-primary-foreground/80 hover:text-accent transition-colors">
+            <Link href="https://www.instagram.com/makeover.by_yashi/?igsh=MWF0MDA1cHF1MzJ6ZA%3D%3D#" aria-label="Twitter" className="text-primary-foreground/80 hover:text-accent transition-colors">
               <Twitter className="h-6 w-6" />
             </Link>
           </div>
         </div>
         <div className="mt-10 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/70">
           <p>&copy; {currentYear} Makeover by Yashi. All rights reserved.</p>
-          <p className="mt-1">Designed with elegance.</p>
+          <p className="mt-1">@webpagesbypatel.</p>
         </div>
       </div>
     </footer>

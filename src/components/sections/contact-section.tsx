@@ -173,15 +173,15 @@ export function ContactSection() {
                 <div className="space-y-4 text-foreground/80">
                     <div className="flex items-start gap-3">
                         <MapPin className="h-6 w-6 text-accent mt-1 shrink-0" />
-                        <p>123 Beauty Avenue, Glamour City, ST 12345</p>
+                        <p>indore,madhya pradesh</p>
                     </div>
                     <div className="flex items-center gap-3">
                         <Phone className="h-6 w-6 text-accent shrink-0" />
-                        <p>(123) 456-7890</p>
+                        <p> +91 84354 94781</p>
                     </div>
                     <div className="flex items-center gap-3">
                         <Mail className="h-6 w-6 text-accent shrink-0" />
-                        <p>hello@makeoverbyyashi.com</p>
+                        <p>patidarjalaj934@gmail.com</p>
                     </div>
                 </div>
              </div>
