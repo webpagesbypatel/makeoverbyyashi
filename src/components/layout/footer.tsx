@@ -20,7 +20,6 @@ export function Footer() {
             <Link href="#services" className="hover:text-accent transition-colors">Services</Link>
             <Link href="#gallery" className="hover:text-accent transition-colors">Gallery</Link>
             <Link href="#contact" className="hover:text-accent transition-colors">Contact</Link>
-            <Link href="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link>
           </nav>
 
           <div className="flex justify-center md:justify-end space-x-4">
