@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1470259078422-826894b933aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8YmVhdXR5JTIwcGFybG91cnxlbnwwfHx8fDE3NDg2OTk2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        src="https://images.unsplash.com/photo-1596702986453-7144a9815d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBzYWxvbiUyMGludGVyaW9yfGVufDB8fHx8MTc0ODc5OTAwMHww&ixlib=rb-4.1.0&q=80&w=1920"
         alt="Luxury salon interior"
         layout="fill"
         objectFit="cover"
