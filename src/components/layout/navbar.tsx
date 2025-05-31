@@ -42,9 +42,8 @@ export function Navbar() {
 
   if (!isMounted) {
     // To prevent hydration mismatch, render a basic non-interactive header or null on server/initial client render
-    // For this case, returning null until mounted is acceptable as the full navbar relies on client-side hooks.
     return (
-      <header className="sticky top-0 z-50 w-full h-20 bg-transparent">
+      <header className="sticky top-0 z-50 w-full h-20 bg-transparent rounded-2xl">
         {/* Placeholder or minimal content if needed to avoid layout shift, or just null */}
       </header>
     );
@@ -55,7 +54,7 @@ export function Navbar() {
       className={cn(
         "sticky top-0 z-50 w-full backdrop-blur-lg rounded-2xl transition-all duration-300 ease-in-out",
         hasScrolled || isMenuOpen // Keep background if mobile menu is open
-          ? "bg-background/80 shadow-md"
+          ? "bg-background/80 shadow-lg" // Changed shadow-md to shadow-lg
           : "bg-transparent shadow-none"
       )}
     >
