@@ -60,8 +60,18 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-16 md:py-24 overflow-hidden">
+      <Image
+        src="https://images.unsplash.com/photo-1540555230793-6d5018ED0343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWF1dHklMjBzYWxvbiUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzQ4ODAwMzg5fDA&ixlib=rb-4.1.0&q=80&w=1920"
+        alt="Subtle background of beauty products"
+        layout="fill"
+        objectFit="cover"
+        className="absolute z-0"
+        data-ai-hint="beauty products"
+        quality={75}
+      />
+      <div className="absolute inset-0 bg-background/90 z-10" />
+      <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">
             Get In Touch
@@ -85,7 +95,7 @@ export function ContactSection() {
                       <FormControl>
                         <Input 
                           placeholder="Your Name" {...field} 
-                          className="bg-background border-border focus:ring-primary focus:border-primary transition-all" 
+                          className="bg-background/80 border-border focus:ring-primary focus:border-primary transition-all" 
                         />
                       </FormControl>
                       <FormMessage />
@@ -102,7 +112,7 @@ export function ContactSection() {
                         <Input 
                           type="email" 
                           placeholder="your.email@example.com" {...field} 
-                          className="bg-background border-border focus:ring-primary focus:border-primary transition-all"
+                          className="bg-background/80 border-border focus:ring-primary focus:border-primary transition-all"
                         />
                       </FormControl>
                       <FormMessage />
@@ -117,7 +127,7 @@ export function ContactSection() {
                       <FormLabel className="text-foreground/90">Service Interested In</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger className="bg-background border-border focus:ring-primary focus:border-primary transition-all">
+                          <SelectTrigger className="bg-background/80 border-border focus:ring-primary focus:border-primary transition-all">
                             <SelectValue placeholder="Select a service" />
                           </SelectTrigger>
                         </FormControl>
@@ -142,7 +152,7 @@ export function ContactSection() {
                       <FormControl>
                         <Textarea
                           placeholder="Tell us more about your needs..."
-                          className="resize-none bg-background border-border focus:ring-primary focus:border-primary transition-all h-32"
+                          className="resize-none bg-background/80 border-border focus:ring-primary focus:border-primary transition-all h-32"
                           {...field}
                         />
                       </FormControl>
@@ -193,3 +203,5 @@ export function ContactSection() {
     </section>
   );
 }
+
+    
