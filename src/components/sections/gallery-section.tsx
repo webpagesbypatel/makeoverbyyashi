@@ -2,9 +2,9 @@
 import Image from "next/image";
 
 const galleryItems = [
-  { src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuYWlscyUyMHBhcmxvdXJ8ZW58MHx8fHwxNzQ4NzAxMzQwfDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Nail art closeup", dataAiHint: "nails parlour" },
-  { src: "https://images.unsplash.com/photo-1549236177-f9b0031756eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYWlyJTIwc3R5bGluZ3xlbnwwfHx8fDE3NDg3MDA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 3", dataAiHint: "hair styling" },
-  { src: "https://images.unsplash.com/photo-1551392505-f4056032826e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFrZXVwfGVufDB8fHx8MTc0ODcwMDgwMnww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup application", dataAiHint: "makeup" },
+  { src: "https://images.unsplash.com/photo-1605900009749-b3cdb75ce9c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuYWlscyUyMHBhcmxvdXJ8ZW58MHx8fHwxNzQ4NzAzNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Nail art closeup", dataAiHint: "nails parlour" },
+  { src: "https://images.unsplash.com/photo-1560869713-bf165a9cfac1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYWlyJTIwc3R5bGluZ3xlbnwwfHx8fDE3NDg3MDM1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 3", dataAiHint: "hair styling" },
+  { src: "https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWtldXB8ZW58MHx8fHwxNzQ4NzAzNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup application", dataAiHint: "makeup" },
 ];
 
 export function GallerySection() {
@@ -41,3 +41,4 @@ export function GallerySection() {
     </section>
   );
 }
+
