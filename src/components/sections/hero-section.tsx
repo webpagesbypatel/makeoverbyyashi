@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-accent/30 z-10"></div> {/* Overlay for text contrast, changed to rose gold 30% opacity */}
       
       <div className="relative z-20 flex flex-col items-center text-center p-4 animate-fade-in">
-        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-white shadow-xl mix-blend-lighten">
+        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-white mix-blend-lighten">
           Experience True Elegance
         </h1>
         <p className="mt-6 max-w-2xl font-body text-lg md:text-xl text-gray-200 leading-relaxed">
