@@ -62,7 +62,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="relative py-16 md:py-24 overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1554755229-ca4470e07232?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb3NlJTIwZ29sZHxlbnwwfHx8fDE3NDg3MDM0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        src="https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb3NlJTIwZ29sZHxlbnwwfHx8fDE3NDg3MDM0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
         alt="Rose gold textured background"
         layout="fill"
         objectFit="cover"
