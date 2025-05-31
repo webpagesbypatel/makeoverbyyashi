@@ -7,13 +7,13 @@ export function HeroSection() {
   return (
     <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1596702986453-7144a9815d57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBzYWxvbiUyMGludGVyaW9yfGVufDB8fHx8MTc0ODc5OTAwMHww&ixlib=rb-4.1.0&q=80&w=1920"
-        alt="Luxury salon interior"
+        src="https://images.unsplash.com/photo-1500831777379-e4237a4534aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWlyJTIwbW9kZWwlMjB3aW5kfGVufDB8fHx8fDE3MTY1MzcxMjh8MA&ixlib=rb-4.1.0&q=80&w=1920"
+        alt="Woman with dynamic pink hair"
         layout="fill"
         objectFit="cover"
         quality={80}
         className="absolute z-0"
-        data-ai-hint="salon interior"
+        data-ai-hint="dynamic hair"
         priority
       />
       <div className="absolute inset-0 bg-accent/30 z-10"></div> {/* Overlay for text contrast, changed to rose gold 30% opacity */}
@@ -39,3 +39,4 @@ export function HeroSection() {
     </section>
   );
 }
+
