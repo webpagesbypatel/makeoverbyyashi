@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 const galleryItems = [
-  { src: "https://images.unsplash.com/photo-1605900009749-b3cdb75ce9c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuYWlscyUyMHBhcmxvdXJ8ZW58MHx8fHwxNzQ4NzAzNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Nail art closeup", dataAiHint: "nails parlour" },
+  { src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8bWFrZXVwJTIwa2l0fGVufDB8fHx8MTc0ODcwMzU2MHww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup kit and products", dataAiHint: "makeup kit" },
   { src: "https://images.unsplash.com/photo-1560869713-bf165a9cfac1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYWlyJTIwc3R5bGluZ3xlbnwwfHx8fDE3NDg3MDM1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 3", dataAiHint: "hair styling" },
   { src: "https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWtldXB8ZW58MHx8fHwxNzQ4NzAzNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Makeup application", dataAiHint: "makeup" },
 ];
