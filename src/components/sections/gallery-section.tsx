@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const galleryItems = [
   { src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWF1dHl8ZW58MHx8fHwxNzQ4Njk5Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 1", dataAiHint: "hairstyle makeover" },
-  { src: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8YmVhdXR5JTIwcGFybG91cnxlbnwwfHx8fDE3NDg2OTk2NzB8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Beauty parlour", dataAiHint: "beauty parlour" },
+  { src: "https://images.unsplash.com/photo-1633685894176-9f715a092b79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8c2FyZWV8ZW58MHx8fHwxNzQ4NzAwNzE1fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Beauty parlour", dataAiHint: "beauty parlour" },
   { src: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8YmVhdXR5fGVufDB8fHx8MTc0ODY5OTY4N3ww&ixlib=rb-4.1.0&q=80&w=1080", alt: "Client transformation 2", dataAiHint: "makeup result" },
   { src: "https://placehold.co/600x400.png", alt: "Parlour ambiance 2", dataAiHint: "spa room" },
   { src: "https://placehold.co/600x400.png", alt: "Client transformation 3", dataAiHint: "nail art" },
@@ -44,4 +44,3 @@ export function GallerySection() {
     </section>
   );
 }
-
