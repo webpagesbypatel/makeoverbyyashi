@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useIsMobile } from "@/hooks/use-mobile"; // Assuming you have this hook
+import { useIsMobile } from "@/hooks/use-mobile";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -17,20 +18,47 @@ const navLinks = [
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
   const isMobile = useIsMobile();
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
+  useEffect(() => {
+    if (!isMounted) return;
+
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 20); // Trigger after scrolling 20px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isMounted]);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   if (!isMounted) {
-    return null; 
+    // To prevent hydration mismatch, render a basic non-interactive header or null on server/initial client render
+    // For this case, returning null until mounted is acceptable as the full navbar relies on client-side hooks.
+    return (
+      <header className="sticky top-0 z-50 w-full h-20 bg-transparent">
+        {/* Placeholder or minimal content if needed to avoid layout shift, or just null */}
+      </header>
+    );
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md shadow-sm">
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full backdrop-blur-lg rounded-b-lg transition-all duration-300 ease-in-out",
+        hasScrolled || isMenuOpen // Keep background if mobile menu is open
+          ? "bg-background/80 shadow-md"
+          : "bg-transparent shadow-none"
+      )}
+    >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <Sparkles className="h-8 w-8 text-primary" />
@@ -62,7 +90,7 @@ export function Navbar() {
       </div>
 
       {isMobile && isMenuOpen && (
-        <div className="md:hidden bg-background shadow-lg absolute w-full left-0 top-20">
+        <div className="md:hidden bg-background shadow-lg absolute w-full left-0 top-20 rounded-b-lg">
           <nav className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (
               <Link
